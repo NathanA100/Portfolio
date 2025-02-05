@@ -1,4 +1,6 @@
 body {
+    background-image: url('Images/starbackground.jpg'); /* Change to your image file */
+    background-position: center;
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
@@ -18,6 +20,7 @@ p {
     margin: auto;
     max-width: 800px;
     padding: 10px;
+    background-color: black;
 }
 
 button {
@@ -64,5 +67,16 @@ img {
     text-align: center;
 }
 
+hr {
+    width:45%;
+}
 
-
+.BImage{
+    background-image: url('starbackground.jpg'); /* Change to your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
