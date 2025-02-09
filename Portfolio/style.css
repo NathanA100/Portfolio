@@ -1,5 +1,29 @@
+/* Fullscreen Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensures it stays behind content */
+}
+
+/* Video Styling */
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Body Styling */
 body {
-    background-image: url('Images/starbackground.jpg'); /* Change to your image file */
     background-position: center;
     background-color: black;
     color: white;
@@ -9,33 +33,25 @@ body {
     padding: 20px;
 }
 
+/* Headings */
 h1 {
     font-size: 36px;
     text-align: center;
-    background-color: black;
 }
 
+/* Paragraphs */
 p {
-    font-size: 18px;
+    font-size: 20px;
     text-align: justify;
     margin: auto;
     max-width: 800px;
     padding: 10px;
     background-color: black;
+    text-indent: 20px;
 }
 
-button {
-    background-color: white;
-    color: black;
-    border: 2px solid white;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-button2 {
+/* Buttons */
+button, button2 {
     background-color: white;
     color: black;
     padding: 10px 20px;
@@ -43,49 +59,40 @@ button2 {
     cursor: pointer;
     border-radius: 10px;
     transition: 0.3s;
+    border: 2px solid white;
 }
 
-a{
+button:hover, button2:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* Links */
+a {
     text-decoration: none;
 }
 
-button:hover {
-    background-color: gray;
-    color: white;
-}
-
-button2:hover {
-    background-color: gray;
-    color: white;
-}
-
+/* Images */
 img {
     width: 100%;  
     max-width: 600px;
     height: auto;
     display: block;
     margin: 10px auto;
-    text-align: center;
 }
 
+/* Horizontal Rule */
 hr {
     width:100%;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
-.BImage{
-    background-image: url('starbackground.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-div#borderdiv{
+/* Project Container */
+div#borderdiv {
     color: white;
     border: 3px solid;
-    margin:30%;
+    margin: 300px;
     padding-bottom: 20px;
     margin-top: 20px;
     border-radius: 20px;
